@@ -4,6 +4,7 @@ import '/app/modules/course/views/course_view.dart';
 import '../controllers/home_controller.dart';
 import '/app/modules/profile/views/profile_view.dart';
 import '/app/modules/history/views/history_view.dart';
+import '/app/modules/http_screen/views/http_view.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({super.key});
@@ -205,7 +206,7 @@ class HomeView extends GetView<HomeController> {
                 const SizedBox(height: 20),
                 _buildMenuRow(
                   ['Music', Icons.music_note],
-                  ['Science', Icons.science],
+                  ['Book', Icons.book],
                   ['E-Sport', Icons.sports_esports],
                   ['More', Icons.more_horiz],
                 ),
@@ -264,6 +265,9 @@ class HomeView extends GetView<HomeController> {
             // } else
             if (label == 'Music') {
               Get.to(() => CourseView());
+            }
+            if (label == 'Book') {
+              Get.to(() => HttpView());
             }
             // Tambahkan navigasi ke page lain sesuai kebutuhan
           },

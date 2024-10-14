@@ -7,6 +7,8 @@ abstract class Routes {
   static const PROFILE = _Paths.PROFILE;
   static const HISTORY = _Paths.HISTORY;
   static const COURSE = _Paths.COURSE;
+  static const HTTP = _Paths.HTTP;
+  static const BOOK = _Paths.BOOK;
 }
 
 abstract class _Paths {
@@ -15,5 +17,6 @@ abstract class _Paths {
   static const PROFILE = '/profile';
   static const HISTORY = '/history';
   static const COURSE = '/course';
-
+  static const HTTP = '/http';
+  static const BOOK = '/book_details';
 }
